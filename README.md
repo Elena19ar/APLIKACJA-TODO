@@ -16,6 +16,20 @@ Zostały uzylane pakiety Axios (wyswietlanie żądań http), Cors (wysyła żąd
 ## Api Backend (GET, POST, UPDATE, DELETE)
 
 
+### Połączenie z bazą danych
+#### Połączenie z bazą danych w index.js
+```
+const mongoose = require("mongoose")
+mongoose.connect("mongodb://localhost/todo-app", {
+ 
+  keepAlive: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+mongoose.set("debug", true) 
+mongoose.Promise = Promise
+```
+
 ###  DELETE 
 ```
 pp.delete("/todos/:id", async (req, res, next) => {

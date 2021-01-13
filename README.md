@@ -11,6 +11,25 @@ I można usunąc zadanie TO Do
 Zostały uzylane pakiety Axios (wyswietlanie żądań http), Cors (wysyła żądania do API)
      
 
-### 
+
 
 ## Api Backend (GET, POST, UPDATE, DELETE)
+
+
+###  DELETE 
+
+###  PUT 
+
+###  POST
+
+###  GET
+'light-code'
+pp.delete("/todos/:id", async (req, res, next) => {
+  try {
+    await db.Todo.findByIdAndRemove(req.params.id)
+    return success(res, "todo deleted!")
+  } catch (err) {
+    next({ status: 400, message: "failed to delete todo" })
+  }
+})
+''

@@ -17,12 +17,6 @@ Zostały uzylane pakiety Axios (wyswietlanie żądań http), Cors (wysyła żąd
 
 
 ###  DELETE 
-
-###  PUT 
-
-###  POST
-
-###  GET
 ```
 pp.delete("/todos/:id", async (req, res, next) => {
   try {
@@ -33,3 +27,40 @@ pp.delete("/todos/:id", async (req, res, next) => {
   }
 })
 ```
+###  PUT
+```
+app.put("/todos/:id", async (req, res, next) => {
+  try {
+    const todo = await db.Todo.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    })
+    return success(res, todo)
+  } catch (err) {
+    next({ status: 400, message: "failed to update todo" })
+  }
+})
+```
+###  POST
+```
+app.post("/todos", async (req, res, next) => {
+  try {
+    const todo = await db.Todo.create(req.body)
+    return success(res, todo)
+  } catch (err) {
+    next({ status: 400, message: "failed to create todos" })
+  }
+})
+```
+
+###  GET
+```
+app.get("/todos", async (req, res, next) => {
+  try {
+    const todos = await db.Todo.find({})
+    return success(res, todos)
+  } catch (err) {
+    next({ status: 400, message: "failed to get todos" })
+  }
+})
+```
+

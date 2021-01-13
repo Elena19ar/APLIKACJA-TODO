@@ -23,7 +23,7 @@ Zostały uzylane pakiety Axios (wyswietlanie żądań http), Cors (wysyła żąd
 ###  POST
 
 ###  GET
-'light-code'
+```
 pp.delete("/todos/:id", async (req, res, next) => {
   try {
     await db.Todo.findByIdAndRemove(req.params.id)
@@ -32,4 +32,4 @@ pp.delete("/todos/:id", async (req, res, next) => {
     next({ status: 400, message: "failed to delete todo" })
   }
 })
-''
+```

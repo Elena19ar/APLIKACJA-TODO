@@ -16,7 +16,7 @@ I można usunąc zadanie TO Do z listy zadań.
 ## REACT frontend:
 Zostały uzylane pakiety Axios (wyswietlanie żądań http),
 Cors (wysyła żądania do API)
-Project został bootstrappowany za pomocą Create React App.
+
 ## Api Backend (GET, POST, UPDATE, DELETE)
 
 

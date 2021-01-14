@@ -95,5 +95,9 @@ app.use((err, req, res, next) => {
 ```
 
 
+## Wykonawca
 
+### Alena Arbuzava
+### Grupa S32-31
+### 3 rok 5 semestr
 

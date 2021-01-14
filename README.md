@@ -80,8 +80,8 @@ app.get("/todos", async (req, res, next) => {
 
 
 W projekcie również została użyta obsługa błędów:
-```
-`light-code`
+``light-code``
+
 app.use((err, req, res, next) => {
   return res.status(err.status || 400).json({
     status: err.status || 400,

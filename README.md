@@ -6,8 +6,9 @@ Mozna zmieniac zadanie.
 Wyswietlanie listy zadań TO DO.
 Jest funkcja oznaczania zadań do wykonania jako zakończone
 I można usunąc zadanie TO Do z listy zadań.
-
-
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1.png)
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/111.png)
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/Безымянный.png)
 ## REACT frontend:
 Zostały uzylane pakiety Axios (wyswietlanie żądań http),
 Cors (wysyła żądania do API)
@@ -88,5 +89,7 @@ app.use((err, req, res, next) => {
   })
 })
 ```
+
+
 
 

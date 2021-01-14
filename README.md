@@ -7,12 +7,11 @@ Wyswietlanie listy zadań TO DO.
 Jest funkcja oznaczania zadań do wykonania jako zakończone
 I można usunąc zadanie TO Do z listy zadań.
 
+
 ## REACT frontend:
-Zostały uzylane pakiety Axios (wyswietlanie żądań http), Cors (wysyła żądania do API)
-     
-
-
-
+Zostały uzylane pakiety Axios (wyswietlanie żądań http),
+Cors (wysyła żądania do API)
+ 
 ## Api Backend (GET, POST, UPDATE, DELETE)
 
 
@@ -80,7 +79,7 @@ app.get("/todos", async (req, res, next) => {
 
 
 W projekcie również została użyta obsługa błędów:
-``light-code``
+```
 
 app.use((err, req, res, next) => {
   return res.status(err.status || 400).json({

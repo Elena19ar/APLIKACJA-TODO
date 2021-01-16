@@ -5,13 +5,17 @@ Mamy możliwość Stworzenia zadania: wprowadzania tekstu, przycisk do wprowadza
 Mozna zmieniac zadanie.
 Wyswietlanie listy zadań TO DO.
 Jest funkcja oznaczania zadań do wykonania jako zakończone
-I można usunąc zadanie TO Do
+I można usunąc zadanie TO Do z listy zadań.
 
+### Jezeli nie ma zadań to wypisuje: No todos yet :(
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/111.png)
+### Podczas wpisania okienko swieci się na niebiesko
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/Безымянный.png)
+### Można wykreślic zadanie (zrobiono)
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1.png)
 ## REACT frontend:
-Zostały uzylane pakiety Axios (wyswietlanie żądań http), Cors (wysyła żądania do API)
-     
-
-
+Zostały uzylane pakiety Axios (wyswietlanie żądań http),
+Cors (wysyła żądania do API)
 
 ## Api Backend (GET, POST, UPDATE, DELETE)
 
@@ -77,4 +81,123 @@ app.get("/todos", async (req, res, next) => {
   }
 })
 ```
+
+
+W projekcie również została użyta obsługa błędów:
+```
+
+app.use((err, req, res, next) => {
+  return res.status(err.status || 400).json({
+    status: err.status || 400,
+    message: err.message || "there was an error processing request",
+  })
+})
+```
+
+
+# FRAMEWORK
+### screen z kodu (css)
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/css.png)
+
+### screen z kodu (przyklad uzycia klas)
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1css.png)
+
+```
+.searchbox__submit {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 16px 0 0 16px;
+  background-color: rgba(69, 142, 225, 0);
+  padding: 0;
+  width: 32px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  right: inherit;
+  left: 0;
+}
+
+.searchbox__submit::before {
+  display: inline-block;
+  margin-right: -4px;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.searchbox__submit:hover,
+.searchbox__submit:active {
+  cursor: pointer;
+}
+
+.searchbox__submit:focus {
+  outline: 0;
+}
+
+.searchbox__submit svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  fill: #6d7e96;
+}
+
+.searchbox__reset {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.searchbox__reset.hide {
+  display: none;
+}
+
+.searchbox__reset:focus {
+  outline: 0;
+}
+
+.searchbox__reset svg {
+  display: block;
+  margin: 4px;
+  width: 8px;
+  height: 8px;
+}
+
+.searchbox__input:valid ~ .searchbox__reset {
+  display: block;
+  -webkit-animation-name: sbx-reset-in;
+  animation-name: sbx-reset-in;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+}
+```
+
+
+
+
+
+## Wykonawca
+
+#### Alena Arbuzava
+#### Grupa S32-31
+#### 3 rok 5 semestr
+#### indeks 260934
 

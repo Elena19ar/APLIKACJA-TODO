@@ -101,7 +101,67 @@ app.use((err, req, res, next) => {
 
 ### screen z kodu (przyklad uzycia klas)
 ![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1css.png)
+ 
+ 
+ 
+  ### Wykorzystanie Bootstrapu:
+  
+ ```
+ div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://localhost:3000/todoes">To do</a>
+        <a class="dropdown-item" href="http://localhost:3000">home</a>       
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Search</a>
+      </div>
+    </div>
 
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card" style="width: 18rem;">
+
+              <div class="card-body">
+                <h5 class="card-title">ToDo app</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Screen from repo</h6>
+                <p class="card-text">Tworzenie zadań do wykonania: Mamy możliwość Stworzenia zadania: wprowadzania tekstu, przycisk do wprowadzania danych wejściowych. Mozna zmieniac zadanie. Wyswietlanie listy zadań TO DO. Jest funkcja oznaczania zadań do wykonania jako zakończone I można usunąc zadanie TO Do z listy zadań..</p>
+                <a href="#" class="card-link">https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/README.md</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-body">
+              <h5 class="card-title">Maps SDK</h5>
+              <h6 class="card-subtitle mb-2 text-muted">for Android Utility Library</h6>
+              <p class="card-text">This open-source library contains utilities that are useful for a wide range of applications using the Google Maps Android API.   </p>
+
+              <a href="https://github.com/Elena19ar/android-maps-utils" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link na Repo</a>
+              
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+ ```
+ ### screen z kodu 
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1b.png)
+ 
+ ### Uzywanie css-ow
 ```
 .searchbox__submit {
   position: absolute;

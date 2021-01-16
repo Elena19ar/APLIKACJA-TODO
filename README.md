@@ -103,6 +103,91 @@ app.use((err, req, res, next) => {
 ![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1css.png)
 
 ```
+.searchbox__submit {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 16px 0 0 16px;
+  background-color: rgba(69, 142, 225, 0);
+  padding: 0;
+  width: 32px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  right: inherit;
+  left: 0;
+}
+
+.searchbox__submit::before {
+  display: inline-block;
+  margin-right: -4px;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.searchbox__submit:hover,
+.searchbox__submit:active {
+  cursor: pointer;
+}
+
+.searchbox__submit:focus {
+  outline: 0;
+}
+
+.searchbox__submit svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  fill: #6d7e96;
+}
+
+.searchbox__reset {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.searchbox__reset.hide {
+  display: none;
+}
+
+.searchbox__reset:focus {
+  outline: 0;
+}
+
+.searchbox__reset svg {
+  display: block;
+  margin: 4px;
+  width: 8px;
+  height: 8px;
+}
+
+.searchbox__input:valid ~ .searchbox__reset {
+  display: block;
+  -webkit-animation-name: sbx-reset-in;
+  animation-name: sbx-reset-in;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+}
 ```
 
 

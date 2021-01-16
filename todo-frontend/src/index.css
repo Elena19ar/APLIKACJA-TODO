@@ -8,6 +8,144 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, 
+  Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.four a {
+  border-radius: 10px;
+  color: #598428;
+  background: -webkit-linear-gradient(70deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: -o-linear-gradient(20deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: linear-gradient(20deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.four a:hover {
+  background: -webkit-linear-gradient(-110deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: -o-linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+}
+
+
+.searchbox__input::placeholder {
+  color: #aaaaaa;
+}
+
+.searchbox__submit {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 16px 0 0 16px;
+  background-color: rgba(69, 142, 225, 0);
+  padding: 0;
+  width: 32px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  right: inherit;
+  left: 0;
+}
+
+.searchbox__submit::before {
+  display: inline-block;
+  margin-right: -4px;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.searchbox__submit:hover,
+.searchbox__submit:active {
+  cursor: pointer;
+}
+
+.searchbox__submit:focus {
+  outline: 0;
+}
+
+.searchbox__submit svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  fill: #6d7e96;
+}
+
+.searchbox__reset {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.searchbox__reset.hide {
+  display: none;
+}
+
+.searchbox__reset:focus {
+  outline: 0;
+}
+
+
+
+
+
+
+
+.algolia-autocomplete  {
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  overflow: hidden;
+  text-indent: -9000px;
+  width: 110px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+
+
+.algolia-autocomplete .algolia-docsearch-suggestion--no-results {
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #373940;
+  margin-top: -8px;
+}
+
+.searchbox__reset svg {
+  display: block;
+  margin: 4px;
+  width: 8px;
+  height: 8px;
+}
+
+.searchbox__input:valid ~ .searchbox__reset {
+  display: block;
+  -webkit-animation-name: sbx-reset-in;
+  animation-name: sbx-reset-in;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
 }

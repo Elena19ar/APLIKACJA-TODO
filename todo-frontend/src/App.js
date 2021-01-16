@@ -14,6 +14,15 @@ function App() {
     fetchTodoAndSetTodos();
   }, []);
 
+
+
+
+
+
+
+
+
+
   const createTodo = async e => {
     e.preventDefault();
     if (!todo) {
@@ -49,6 +58,7 @@ function App() {
     <div className="App">
       <div>
         <input
+      
           type="text"
           value={todo}
           onChange={({ target }) => setTodo(target.value)}

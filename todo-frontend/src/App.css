@@ -22,3 +22,22 @@
 
   
 }
+
+.custom-dropdown-menu :global(.super-colors) {
+  background: linear-gradient(
+    to bottom,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+}
+
+
+
+
+
+
+

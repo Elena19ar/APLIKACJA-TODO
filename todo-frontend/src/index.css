@@ -126,6 +126,41 @@ code {
 
 
 
+
+
+
+.searchbox__input:focus,
+.searchbox__input:active {
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #aaaaaa;
+  background: #ffffff;
+}
+
+.searchbox__input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+.searchbox__input::-moz-placeholder {
+  color: #aaaaaa;
+}
+
+.searchbox__input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.searchbox__input::placeholder {
+  color: #aaaaaa;
+}
+
+
+
+.namespace {
+  opacity: 0.7;
+}
+
+
+
+
 .algolia-autocomplete .algolia-docsearch-suggestion--no-results {
   width: 100%;
   padding: 8px 0;

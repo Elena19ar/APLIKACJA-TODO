@@ -101,7 +101,67 @@ app.use((err, req, res, next) => {
 
 ### screen z kodu (przyklad uzycia klas)
 ![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1css.png)
+ 
+ 
+ 
+  ### Wykorzystanie Bootstrapu:
+  
+ ```
+ div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://localhost:3000/todoes">To do</a>
+        <a class="dropdown-item" href="http://localhost:3000">home</a>       
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Search</a>
+      </div>
+    </div>
 
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card" style="width: 18rem;">
+
+              <div class="card-body">
+                <h5 class="card-title">ToDo app</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Screen from repo</h6>
+                <p class="card-text">Tworzenie zadań do wykonania: Mamy możliwość Stworzenia zadania: wprowadzania tekstu, przycisk do wprowadzania danych wejściowych. Mozna zmieniac zadanie. Wyswietlanie listy zadań TO DO. Jest funkcja oznaczania zadań do wykonania jako zakończone I można usunąc zadanie TO Do z listy zadań..</p>
+                <a href="#" class="card-link">https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/README.md</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-body">
+              <h5 class="card-title">Maps SDK</h5>
+              <h6 class="card-subtitle mb-2 text-muted">for Android Utility Library</h6>
+              <p class="card-text">This open-source library contains utilities that are useful for a wide range of applications using the Google Maps Android API.   </p>
+
+              <a href="https://github.com/Elena19ar/android-maps-utils" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link na Repo</a>
+              
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+ ```
+ ### screen z kodu 
+![Image alt](https://github.com/Elena19ar/APLIKACJA-TODO/blob/master/1b.png)
+ 
+ ### Uzywanie css-ow
 ```
 .searchbox__submit {
   position: absolute;
@@ -137,58 +197,6 @@ app.use((err, req, res, next) => {
   cursor: pointer;
 }
 
-.searchbox__submit:focus {
-  outline: 0;
-}
-
-.searchbox__submit svg {
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
-  fill: #6d7e96;
-}
-
-.searchbox__reset {
-  display: block;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  margin: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
-  padding: 0;
-  font-size: inherit;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  fill: rgba(0, 0, 0, 0.5);
-}
-
-.searchbox__reset.hide {
-  display: none;
-}
-
-.searchbox__reset:focus {
-  outline: 0;
-}
-
-.searchbox__reset svg {
-  display: block;
-  margin: 4px;
-  width: 8px;
-  height: 8px;
-}
-
-.searchbox__input:valid ~ .searchbox__reset {
-  display: block;
-  -webkit-animation-name: sbx-reset-in;
-  animation-name: sbx-reset-in;
-  -webkit-animation-duration: 0.15s;
-  animation-duration: 0.15s;
-}
-```
 
 
 
